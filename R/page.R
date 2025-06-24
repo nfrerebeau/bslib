@@ -25,7 +25,7 @@ page <- function(..., title = NULL, theme = bs_theme(), lang = NULL) {
   # which means named arguments aren't handled sensibly
   as_page(
     shiny::bootstrapPage(
-      tags$body(...),
+      tags$div(...),
       title = title,
       theme = theme,
       lang = lang,
